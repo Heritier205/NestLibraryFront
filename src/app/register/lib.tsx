@@ -1,21 +1,13 @@
-export type inpuType = "text" | "email" | "password" | "submit";
+export const inputTypes = {
+  TEXT: 'text',
+  PASSWORD: 'password',
+  SUBMIT: 'submit',
+  EMAIL: 'email',
+} as const;
 
-export const inputTypes: Record<string, inpuType> = {
-    TEXT : "text",
-    PASSWORD : "password",
-    SUBMIT: "submit",
-    EMAIL: "email",
-}
-
-export type registerField =
-    "firstname"
-    | "lastname"
-    | "email"
-    | "password";
-
-export const registerFields: Record<string, registerField> = {
-    FIRSTNAME: "firstname",
-    LASTNAME: "lastname",
-    EMAIL: "email",
-    PASSWORD: "password",
-}
+export const registerFields = {
+  FIRSTNAME: 'firstname',
+  LASTNAME: 'lastname',
+  EMAIL: 'email',
+  PASSWORD: 'password',
+} as const;
